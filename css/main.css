@@ -1,0 +1,215 @@
+/*Nikolai Magiev 8948814 */
+ul{
+    list-style-type: none; 
+   line-height: 50px;
+  }
+  ul a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+  }
+  figure{
+    display: flex;
+  }
+
+nav{
+  flex: auto;
+}
+
+nav li {
+  display: inline;
+  list-style-type: none;
+  }
+  nav li a {
+    color: rgb(0, 0, 0);
+    padding: 1em;
+    background-color: rgb(255, 255, 255);
+    border: 0.1rem;
+    border-style: solid;
+    border-radius: 10px;
+    border-color: rgb(0, 0, 0);
+}
+ul a:hover {
+  text-decoration: none;
+  color: rgb(17, 0, 255);
+  border-color: rgb(0, 0, 0);
+}
+aside{
+background-color: #ffffff;
+padding-left: 0px;
+height: 50rem;
+width: 33%; 
+float: right;
+border-style: solid;
+border-radius: 10px;
+border-color: black;
+padding: 1rem;
+background-position: center;
+
+}
+
+aside a:hover {
+  color: rgb(17, 0, 255);
+}
+body {
+  width: 90%;
+	max-width: 4180px;
+	margin: auto;
+	margin-top: 15px;
+	margin-bottom: 15px;
+	font: 1rem Verdana;
+	padding: 0;
+  
+}
+@media only screen and (max-width: 1000px) {
+	html {
+		font: 1.5rem sans-serif;
+	}
+	aside {
+		background-repeat: repeat;
+		background-size: auto;
+	}
+}
+@media only screen and (max-width: 600px) {
+	html {
+		font: 0.8rem sans-serif;
+	}
+}
+ table{
+  width: 80%;
+ }
+  table, th, td {
+    border:1px solid black;
+  }
+   .border{
+  display: flex;
+  height: fit-content;
+  border: 0.25rem solid rgb(0, 0, 0);
+	border-radius: 2rem;
+	margin: auto;
+	padding-left: 20px;
+  width: auto;
+}
+header{
+  height: 5rem;
+  background-color: rgb(0, 8, 255); 
+  background-image: linear-gradient(to bottom right, white, gray);
+}
+  h1{
+    font-variant: small-caps;
+color: rgb(0, 0, 0);
+  }
+  h2{
+font-variant: small-caps;
+color: rgb(0, 0, 0);
+  }
+  footer{
+    height: 3rem;
+    background-color: gray; 
+    background-image: linear-gradient(to bottom right, white, gray);
+  }
+  footer p {
+    font-size: 0.9rem;
+	color:rgb(0, 0, 0);
+  }
+main{
+	width: 67%;
+  padding: 0px;
+  }
+.mainimg{
+  border: 5px solid black;
+  float: left;
+  clip-path: polygon(20% 0%, 80% 0%, 100% 20%, 100% 80%, 80% 100%, 20% 100%, 0% 80%, 0% 20%);
+  shape-outside: polygon(20% 0%, 80% 0%, 100% 20%, 100% 80%, 80% 100%, 20% 100%, 0% 80%, 0% 20%);
+}
+figcaption {
+	font-weight: bold;
+	font-variant: small-caps;
+}
+q{
+  font-family: cursive;
+  font-style: italic;
+  font-size: 1.5rem;
+}
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  padding: 20px;
+}
+
+/* CSS for grid items (images) */
+.grid-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f0f0f0;
+  border: 1px solid #ccc;
+  overflow: hidden;
+}
+
+.grid-item img {
+  max-width: 100%;
+  max-height: 100%;
+  display: block;
+}
+.grid-item{
+  clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+}
+form{
+  padding: 5px;
+ 
+}
+input[type="text"]{
+  width: 50%;
+  display: block;
+  height: 2em;
+  
+}
+input[type="email"]{
+  width: 50%;
+  display: block;
+  height: 2em;
+  
+}
+input[type="submit"]{
+  width: 50%;
+  display: block;
+  height: 2em;
+  font-size: 1.5rem;
+  font-weight: bold;
+font-variant: small-caps;
+}
+input[type="select"]{
+  width: 50%;
+  display: block;
+  height: 2em;
+  
+}
+input[type="option"]{
+  width: 50%;
+  display: block;
+  height: 2em;
+  
+}
+input[type="radio"]{
+  height: 2em;
+  width: 2em;
+ 
+}
+input[type="checkbox"]{
+  height: 2em;
+  width: 2em;
+  
+}
+select, option, label, legend {
+  font-size: 1.5rem;
+font-weight: bold;
+font-variant: small-caps;
+}
+textarea{
+width: 50%;
+display: block;
+}
+fieldset{
+border: none;
+}
